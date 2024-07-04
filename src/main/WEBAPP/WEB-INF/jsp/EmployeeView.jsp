@@ -159,6 +159,7 @@ label {
 				<c:if test="${ not empty model.slno}">
 				<td><a href="/delete?no=${model.slno}" id="delete" class="confirmation" onclick="return confirm('Are you sure?')">Delete</a>
 					<a href="update?no=${model.slno}">Update</a></td> 
+					<a href="download?no=${model.slno}" class="btn btn-primary">Download</a>
 				</c:if>
 				
 				

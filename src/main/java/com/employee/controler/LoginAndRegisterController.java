@@ -45,7 +45,7 @@ public class LoginAndRegisterController {
 	@GetMapping("alogin")
 	public String show_admin_login()
 	{
-		return "AdminLogin";
+		return "Adminlogin";
 	}
 	
 	@GetMapping("elogin")
@@ -79,7 +79,7 @@ public class LoginAndRegisterController {
 	public String Admin_Login(ModelMap model, @RequestParam String Adminname, @RequestParam String Password) {
 		if(Adminname.equals("admin") && Password.equals("123"))
 		{		
-				return "Adminmain";
+				return "AdminMain";
 		}else{
 			model.put("errorMsg", "Invalid username or password");
 			return "Adminlogin";
